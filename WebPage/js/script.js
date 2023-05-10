@@ -4,4 +4,5 @@ $(document).ready(function () {
         $(this).toggleClass('fa-times')
         $('.navbar').toggleClass('nav-toggle')
     })
+
 })
