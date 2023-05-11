@@ -315,6 +315,62 @@ section {
     padding: 1rem 0;
 }
 
+.service .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 4rem;
+
+}
+
+.service .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.service .box-container .box img {
+    height: 10rem;
+}
+
+.service .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.service .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.service .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.service .box-container .box .btn {
+    font-size: 1.6rem;
+}
+
+.service .box-container .box:hover {
+    background: var(--black);
+}
+
+.product .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.product .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+
 @media(max-width:991px) {
     html {
         font-size: 55%;
