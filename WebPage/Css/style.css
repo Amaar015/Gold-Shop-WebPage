@@ -60,12 +60,37 @@ body {
     letter-spacing: 0.2rem;
 }
 
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    color: #fff;
+    font-size: 3.5rem;
+    /* font-weight: 350; */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--min-color);
+    text-transform: uppercase;
+}
+
+.introduction {
+    margin-top: -0.5rem;
+    font-size: 1.8rem;
+    color: var(--min-color);
+    text-align: center;
+}
+
 .header {
     background: var(--bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 7%;
+    padding: 0rem 7%;
     border-bottom: var(--border);
     position: fixed;
     top: 0;
@@ -136,6 +161,9 @@ body {
 
 }
 
+.header .search-form.active {
+    transform: scaleY(1);
+}
 
 .header .search-form input {
     height: 100%;
@@ -217,6 +245,76 @@ body {
     text-align: center;
 }
 
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background: url('../Images/bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.home .content {
+    max-width: 60rem;
+    margin-top: 6rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+/* about section */
+
+.about .introduction {
+    padding-bottom: 3.5rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--black);
+}
+
+.row .image {
+    flex: 1 1 45rem;
+}
+
+.row .image img {
+    width: 100%;
+}
+
+.row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+
+}
+
+.row .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
 @media(max-width:991px) {
     html {
         font-size: 55%;
@@ -225,6 +323,10 @@ body {
     .header {
         padding: 1.5rem 2rem;
     }
+
+}
+
+@media(max-width:768px) {
 
 
     #bars {
@@ -259,5 +361,41 @@ body {
         top: 50%;
         opacity: 1;
     }
+
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home {
+        background-position: right;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content .h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+
+
+}
+
+@media(max-width:350px) {
+    html {
+        font-size: 43%;
+    }
+
+
 
 }
