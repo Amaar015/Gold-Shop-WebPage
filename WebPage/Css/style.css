@@ -254,6 +254,7 @@ section {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+
 }
 
 .home .content {
@@ -265,6 +266,7 @@ section {
     font-size: 6rem;
     text-transform: uppercase;
     color: #fff;
+
 }
 
 .home .content p {
@@ -362,13 +364,108 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
+    padding-top: 4rem;
 }
+
 
 .product .box-container .box {
     text-align: center;
     border: var(--border);
     padding: 2rem;
 }
+
+.product .box-container .box .icons a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: 0.3rem;
+}
+
+.product .box-container .box .icons a:hover {
+    background: var(--min-color);
+}
+
+.product .box-container .box .image {
+    padding: 2.5rem 0;
+}
+
+.product .box-container .box .image img {
+    height: 25rem;
+}
+
+.product .box-container .box .content h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.product .box-container .box .content .stars {
+    padding: 1.5rem;
+
+}
+
+.product .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--min-color)
+}
+
+.product .box-container .box .content .price {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.product .box-container .box .content .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 4rem;
+}
+
+
+.review .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+    background: var(--bg);
+}
+
+.review .box-container .box:hover {
+    background: var(--black);
+}
+
+.review .box-container .box .quote {
+    width: 10rem;
+    margin-top: -2rem;
+}
+
+
+.review .box-container .box p {
+    font-size: 1.6rem;
+    /* margin-top: -2rem; */
+    color: #ccc;
+}
+
+.review .box-container .box .user {
+    width: 12rem;
+}
+
+.review .box-container .box h3 {
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--min-color);
+}
+
 
 
 @media(max-width:991px) {
